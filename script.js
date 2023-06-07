@@ -44,3 +44,16 @@ const numArr = [1, 2, 3];
 console.log(numArr.every((el) => {
   return typeof(el) === "number";
 }));
+
+
+
+// reduce
+
+const arr = [10, 20, 30, 40, 50, 60];
+
+const res = arr. reduce((sum, current) => {
+  console.log(sum, current);
+  return sum + current
+});
+
+console.log(`Sum equals ${res}`);
