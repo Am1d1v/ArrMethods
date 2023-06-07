@@ -47,13 +47,29 @@ console.log(numArr.every((el) => {
 
 
 
-// reduce
+// Reduce
+
+/*
 
 const arr = [10, 20, 30, 40, 50, 60];
 
 const res = arr. reduce((sum, current) => {
   console.log(sum, current);
   return sum + current
+});
+
+console.log(`Sum equals ${res}`);
+
+*/
+
+
+// Reduce for string
+
+const arr = ["apple", "pear", "plum"];
+
+const res = arr. reduce((sum, current) => {
+  //console.log(sum, current);
+  return `${sum} , ${current}`;
 });
 
 console.log(`Sum equals ${res}`);
