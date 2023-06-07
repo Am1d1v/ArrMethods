@@ -93,7 +93,8 @@ const objMatrix = Object.entries(obj).filter((human) => {
 
 */
 
-const objMatrix = Object.entries(obj).filter((human) => {
+const objMatrix = Object.entries(obj)
+  .filter((human) => {
   return human[1] === "person";
 }).map((el) => {
   return el[0]
