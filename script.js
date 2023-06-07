@@ -73,3 +73,30 @@ const res = arr. reduce((sum, current) => {
 });
 
 console.log(`Sum equals ${res}`);
+
+
+
+
+const obj = {
+  dima: "person",
+  ann: "person",
+  dog: "animal",
+  cat: "animal"
+};
+
+
+/*
+
+const objMatrix = Object.entries(obj).filter((human) => {
+  return human[1] === "person";
+});
+
+*/
+
+const objMatrix = Object.entries(obj).filter((human) => {
+  return human[1] === "person";
+}).map((el) => {
+  return el[0]
+});
+
+console.log(objMatrix);
